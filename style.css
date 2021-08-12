@@ -1,0 +1,282 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+nav{
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    min-height:25px;
+    display: flex;
+}
+.logobox{
+    background-color: blue;
+    height: 100%;
+    width: 25%;
+}
+.logobox img{
+    width: clamp(120px,100%,570px);
+    height: clamp(90px,100%,200px) ;
+    display: block;
+    
+
+    
+}
+.button-group{
+    
+    width: 70%;
+    align-items: center;
+    display: flex;
+    
+}
+.nav-button{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: clamp(10px ,1vw ,20px);
+    color: black;
+    margin: auto;
+    
+}
+.nav-button:hover{
+    background-color: black;
+    color: white;
+    border-style: double;
+    transition: 0.75ms;
+}
+.menu{
+    font-size: clamp(20px,5vw,25px);
+      display: none;  
+
+}
+.mybutton{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+    font-size: clamp(8px ,1.3vw ,12px);
+    color: black;
+    display: block;
+    text-align: center;
+    background-color: rgba(151, 142, 142, 0.205);;
+    margin-left: -60px;
+    
+
+}
+.mybutton:hover{
+    background-color: black;
+    color: white;
+    border-style: double;
+    transition: 0.75ms;
+}
+.dropdown-menu{
+    position: absolute;
+
+padding-right: 7px;
+}
+main{
+    min-height: 60px;
+    margin-bottom: 20px;
+}
+main img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.catagories{
+    
+    width: 80%;
+    margin: auto;
+    display: flex;
+   justify-content: space-between;
+   
+    
+}
+.catagory1,.catagory2,.catagory3{
+    background-color: brown;
+   height: 25vw;
+   width: 32%;
+   background-position: center;
+   background-size: cover;
+   padding: 0;
+    
+    display: flex; 
+}
+.catagory1{
+    background-image: url(https://i.postimg.cc/fRqZ7Gjs/quinceanera.jpg);
+}
+.catagory2{
+    background-image:url(https://i.postimg.cc/CxRPnXc9/prom-dress.jpg);
+}
+.catagory3{
+    background-image:url(https://i.postimg.cc/Kc1TnbPG/anos-dresses1.jpg);
+}
+.subcatagory{
+    height: 90%;
+    width: 90%;
+    border: solid 1px white;
+    margin: auto;
+    
+     display: flex;
+}
+.content{
+    height: 30%;
+    width: 75%;
+    background-color: rgba(233, 227, 227, 0.562);
+    margin: auto;
+   text-align: center;
+    color:rgb(94, 89, 89) ;
+    font-size: clamp(11px, 1.7vw, 60px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.arrival{
+    
+    height: clamp(60px, 10vw, 200px);
+	width: clamp(200px, 30%, 800px);
+    margin: auto;
+}
+.arrival img {
+	height: 100%;
+	width: 100%;
+}
+.cards{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+
+}
+.card{
+    height: 35vw;
+	width: 30%;
+	margin-bottom: 20px;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+}
+.brand-header {
+	height: clamp(60px, 10vw, 200px);
+	width: clamp(200px, 30%, 800px);
+	margin: auto;
+    
+	margin-bottom: 10px;
+}
+.brand-header img {
+	height: 100%;
+	width: 100%;
+}
+.brands {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+    
+}
+.brands p {
+	font-size: clamp(8px, 2vw, 40px);
+}
+.brand-box{
+	background-color: #f8f8f8;
+}
+footer {
+	background-color: #333333;
+	padding: 20px 0;
+}
+
+.footer-logo {
+	height: clamp(60px, 8vw, 200px);
+	width: clamp(130px, 20%, 500px);
+	margin: auto;
+	margin-bottom: 20px;
+    
+}
+.footer-logo img {
+	height: 100%;
+	width: 100%;
+}
+ul.social {
+	margin: auto;
+	padding-bottom: 20px;
+	padding-left: 0;
+	width: 80%;
+	text-align: center;
+	border-bottom: 2px solid white;
+  }
+  ul.social > li {
+	display: inline-block;
+  }
+  
+  ul.social > li > a {
+	display: inline-block;
+	text-align: center;
+	font-size: clamp(22px, 3vw,80px);
+    line-height: clamp(30px, 4vw,100px);
+    width: clamp(30px, 4vw,100px);
+    height: clamp(30px, 4vw,100px);
+    border-radius: clamp(30px, 4vw,100px);
+	background-color: white;
+	color: black;
+  }
+  ul.social > li > a:hover {
+	text-decoration: none;
+	background-color: #ee7c22;
+  }
+  footer p {
+    text-align: center;
+    color: white;
+    font-size: clamp(8px, 1.2vw, 70px);
+    padding-top: 10px;
+}
+	
+
+@media(max-width:1190px){
+  
+.button-group{
+    display: none;
+}
+.menu{
+     display: block; 
+}
+.button-group{
+   width: 100%; 
+}
+
+}
+@media(max-width:700px){
+    .card{
+        height: 55vw;
+		width: 47%;
+    }
+    
+}
+@media(max-width:500px){
+.catagories{
+    display: block;
+}
+.catagory1,.catagory2,.catagory3{
+width: 100%;
+height: 70vw;
+margin-bottom: 20px;
+}
+.arrival{
+    margin-bottom: 20px; 
+}
+.card{
+    height: 110vw;
+    width: 100%;
+}
+.cards{
+    display: block;
+}
+}
+
+
